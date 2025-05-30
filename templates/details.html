@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <title>Weather Details</title>
+    </head>
+    <body>
+        <h1>Weather Details for {{weather['name']}}</h1>
+        <p>Temperature: {{weather['main']['temp']}}</p>
+        <p>Feels like: {{weather['main']['feels_like']}}</p>
+        <p>Wind speed: {{weather['main']['wind_speed']}}</p>
+        <p>Humidity: {{weather['main']['humidity']}}</p>
+        <a href="/">Go Back</a>
+    </body>
+</html>
