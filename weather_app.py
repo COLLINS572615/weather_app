@@ -31,5 +31,11 @@ def home():
         weather_data = get_weather(city)
     return render_template("index.html", weather=weather_data)
 
+@app.route("/details/<city>")
+def details(city):
+    weather_data = get_weather(city)
+    return render_template("details.html", weather = weather_data)
+
 if __name__ == "__main__":
     app.run(debug=True)
+
