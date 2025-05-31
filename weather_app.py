@@ -35,7 +35,8 @@ def home():
 def details(city):
     weather_data = get_weather(city)
     return render_template("details.html", weather = weather_data)
-    @app.errorhandler(404)
+    
+@app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
 
